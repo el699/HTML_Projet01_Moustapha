@@ -6,6 +6,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio | El Hadji Moustapha GUEYE</title>
+    <!-- Police Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Fichier CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -30,7 +38,7 @@
     <main>
 
         <!-- SECTION ACCUEIL -->
-        <section>
+        <section id="accueil-presentation" class="hero-section">
             <h2>Bienvenue sur mon portfolio</h2>
 
             <p>
@@ -45,7 +53,7 @@
         </section>
 
         <!-- SECTION À PROPOS -->
-        <section id="apropos">
+        <section id="apropos" class="about-section">
             <h2>À propos de moi</h2>
 
             <p>
@@ -107,10 +115,10 @@
         </section>
 
         <!-- SECTION PROJETS -->
-        <section id="travaux">
+        <section id="travaux" class="projects-section">
             <h2>Mes projets et réalisations</h2>
 
-            <article>
+            <article class="project-card">
                 <h3>Projet 1 : Système énergétique multisource</h3>
 
                 <p>
@@ -128,7 +136,7 @@
                 </p>
             </article>
 
-            <article>
+            <article class="project-card">
                 <h3>Projet 2 : Maintenance des installations industrielles</h3>
 
                 <p>
@@ -145,7 +153,7 @@
                 </p>
             </article>
 
-            <article>
+            <article class="project-card">
                 <h3>Projet 3 : Développement informatique</h3>
 
                 <p>
@@ -158,16 +166,17 @@
                     Outils : HTML, CSS, Javascript, RAG, LLM, Python ...
                 </p>
 
-                <a href="https://developer.mozilla.org/fr/docs/Web/HTML"
-                   target="_blank"
-                   rel="noopener noreferrer">
+                <a 
+                    href="https://developer.mozilla.org/fr/docs/Web/HTML"
+                    target="_blank"
+                    rel="noopener noreferrer">
                     Découvrir la documentation HTML
                 </a>
             </article>
 
             <h3>Tableau récapitulatif des projets</h3>
 
-            <table border="1">
+            <table class="projects-table">
                 <thead>
                     <tr>
                         <th>Projet</th>
@@ -199,7 +208,7 @@
         </section>
 
         <!-- SECTION FORMATION ET CV -->
-        <section id="cv">
+        <section id="cv" class="cv-section">
             <h2>Formation et curriculum vitæ</h2>
 
             <h3>Formation académique</h3>
@@ -237,15 +246,16 @@
             <h3>Télécharger mon CV</h3>
 
             <p>
-                <a href="documents/CV_El_Hadji_Moustapha_GUEYE.pdf"
-                   target="_blank">
+                <a 
+                href="documents/CV_El_Hadji_Moustapha_GUEYE.pdf"
+                target="_blank">
                     Consulter mon curriculum vitæ
                 </a>
             </p>
         </section>
 
         <!-- SECTION CONTACT -->
-        <section id="contact">
+        <section id="contact" class="contact-section">
             <h2>Me contacter</h2>
 
             <p>
@@ -254,14 +264,15 @@
                 N'hésitez pas à me contacter.
             </p>
 
-            <form action="#" method="post">
+            <form class="contact-form" action="#" method="post">
 
                 <label for="nom">Nom complet :</label><br>
-                <input type="text"
-                       id="nom"
-                       name="nom"
-                       placeholder="Saisissez votre nom"
-                       required>
+                <input 
+                    type="text"
+                    id="nom"
+                    name="nom"
+                    placeholder="Saisissez votre nom"
+                    required>
                 <br><br>
 
                 <label for="email">Adresse e-mail :</label><br>
